@@ -1,0 +1,84 @@
+html {
+  scroll-behavior: smooth;
+  margin-left: 2rem;
+  font-family: "Satoshi", sans-serif;
+  background-color: #FFFFFF;
+}
+
+:root {
+  --text: #8785a2;
+  --third: #252a34;
+}
+
+.navbar {
+  width: auto;
+  height: 3rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--third);
+}
+
+.child2,
+.child3 {
+  margin-left: 0.5rem;
+
+  float: right;
+  color: var(--third);
+}
+
+.child1,
+.child2,
+.child3 {
+  margin-right: 0.5rem;
+  padding: 10px;
+  text-decoration: none;
+}
+.child1 {
+  margin-left: 0%;
+  font-size: 32px;
+  float: left;
+  color: var(--text);
+}
+.tag {
+  margin-top: 10rem;
+  font-size: 3rem;
+}
+.cd {
+  color: var(--text);
+  font-weight: bold;
+}
+.tag2 {
+  margin-top: 1.5rem;
+  width: 34%;
+  font-size: 2rem;
+  border-bottom: 4px solid var(--text);
+  padding-bottom: 3px;
+}
+.cd2 {
+  font-weight: bold;
+}
+.cardimg {
+  float: right;
+  margin-right: 4rem;
+  margin-top: -12rem;
+}
+.btn{
+    font-size: 2rem;
+    margin-top: 5rem;
+}
+.btnex{
+    border-radius: 80px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--text);
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 600px) {
+
+  }
+  
