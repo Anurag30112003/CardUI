@@ -1,0 +1,192 @@
+html {
+  scroll-behavior: smooth;
+  margin-left: 2rem;
+  font-family: "Satoshi", sans-serif;
+  background-color: #ffffff;
+}
+
+:root {
+  --text: #8785a2;
+  --third: #252a34;
+}
+
+.navbar {
+  width: auto;
+  height: 3rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  font-size: 30px;
+  color: var(--third);
+}
+
+.child2,
+.child3 {
+  margin-left: 0.5rem;
+
+  float: right;
+  color: var(--third);
+}
+
+.child1,
+.child2,
+.child3 {
+  margin-right: 0.5rem;
+  padding: 10px;
+  text-decoration: none;
+}
+.child1 {
+  margin-left: 0%;
+  font-size: 32px;
+  float: left;
+  color: var(--text);
+}
+
+.heading{
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--text);
+}
+
+/* custom css for cards */
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapper{
+    margin-top: 1rem;
+    width: 50%;
+    border: 3px solid var(--text);
+}
+
+
+/* ----------------------------------  UI-1 css code ------------------------------------ */
+
+.card1 {
+    margin: 42px auto;
+    position: relative;
+    width: 200px;
+    height: 350px;
+    background: url("./assets/img1.webp") center/cover;
+    border-radius: 0.5em;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, -1);
+    cursor: pointer;
+  }
+  
+  .layer {
+    position: absolute;
+    display: flex;
+    bottom: -10px;
+    left: 0;
+    width: 290px;
+  }
+  
+  .layer span {
+    display: block;
+    width: 69px;
+    height: 120px;
+    margin: 0;
+    background-color: rgba(2, 2, 2, 0.623);
+    transform: translateY(200px);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .text {
+    position: absolute;
+    top: 1em;
+    left: 10px;
+    z-index: 1;
+    transform: translateY(200px);
+    transition: 1s ease-in-out;
+  }
+  
+  .card1:hover .layer .text {
+    transform: translateY(0);
+  }
+  
+  .card1:hover .layer span {
+    transform: translateY(0);
+  }
+  
+  .text h4 {
+    font-size: 16px;
+    padding: 0.3em;
+    font-weight: bolder;
+    color: #bfbfbf;
+    text-shadow: 0 1px 2px #ccc;
+  }
+  
+  .text p {
+    font-size: 0.7em;
+    padding: 0.3em;
+    color: #bfbfbf;
+  }
+  
+  .layer span:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+  
+  .layer span:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+  
+  .layer span:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+  /*  */
+
+@media only screen and (max-width: 1230px) {
+  html {
+    margin-left: 0rem;
+  }
+  .navbar {
+    width: 100%;
+    font-size: 30px;
+  }
+  .child2,
+  .child3 {
+    margin-left: 0.2rem;
+  }
+  .child1,
+  .child2,
+  .child3 {
+    margin-right: 0.1rem;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .child1 {
+    margin-left: 0%;
+    font-size: 30px;
+    color: var(--text);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    margin-left: 0rem;
+  }
+  .navbar {
+    width: 100%;
+    font-size: 20px;
+  }
+  .child2,
+  .child3 {
+    margin-left: 0.2rem;
+  }
+  .child1,
+  .child2,
+  .child3 {
+    margin-right: 0.1rem;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .child1 {
+    margin-left: 0%;
+    font-size: 20px;
+    color: var(--text);
+  }
+}
