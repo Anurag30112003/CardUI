@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
   margin-left: 2rem;
   font-family: "Satoshi", sans-serif;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 :root {
@@ -61,24 +61,168 @@ html {
 .cardimg {
   float: right;
   margin-right: 4rem;
-  margin-top: -12rem;
+  margin-top: -4rem;
 }
-.btn{
-    font-size: 2rem;
-    margin-top: 5rem;
+.btn {
+  font-size: 2rem;
+  margin-top: 5rem;
 }
-.btnex{
-    border-radius: 80px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: var(--text);
-    font-weight: bold;
-    text-decoration: none;
-    color: #FFFFFF;
+.btnex {
+  border-radius: 80px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  border: 3px solid var(--text);
 }
-@media only screen and (max-width: 600px) {
 
+.btn :hover {
+  background-color: #ffffff;
+  color: var(--text);
+}
+
+@media only screen and (max-width: 1230px) {
+  html{
+    margin-left: 0rem;
+  }
+  .navbar {
+    width: 100%;
+    font-size: 30px;
+  }
+  .child2,
+  .child3 {
+    margin-left: 0.2rem;
+  }
+  .child1,
+  .child2,
+  .child3 {
+    margin-right: 0.1rem;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .child1 {
+    margin-left: 0%;
+    font-size: 30px;
+    color: var(--text);
+  }
+  .tag {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
   }
   
+
+.tag2 {
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  font-size: 2rem;
+  border-bottom: 0px solid var(--text);
+  padding-bottom: 3px;
+}
+.cd2 {
+  font-weight: bold;
+}
+.cardiv{
+  display: flex;
+  justify-content: center;
+}
+.cardimg {
+  width: 30%;
+  float: none;
+  margin-right: 0rem;
+  margin-top: 0rem;
+}
+.btn {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+}
+.btnex {
+  border-radius: 80px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  border: 3px solid var(--text);
+}
+}
+
+@media only screen and (max-width: 600px) {
+  html{
+    margin-left: 0rem;
+  }
+  .navbar {
+    width: 100%;
+    font-size: 20px;
+  }
+  .child2,
+  .child3 {
+    margin-left: 0.2rem;
+  }
+  .child1,
+  .child2,
+  .child3 {
+    margin-right: 0.1rem;
+    padding: 5px;
+    text-decoration: none;
+  }
+  .child1 {
+    margin-left: 0%;
+    font-size: 20px;
+    color: var(--text);
+  }
+  .tag {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+  }
+  
+
+.tag2 {
+  text-align: center;
+  margin-top: .5rem;
+  width: 100%;
+  font-size: 1rem;
+  border-bottom: 0px solid var(--text);
+  padding-bottom: 3px;
+}
+.cd2 {
+  font-weight: bold;
+}
+.cardiv{
+  display: flex;
+  justify-content: center;
+}
+.cardimg {
+  width: 40%;
+  float: none;
+  margin-right: 0rem;
+  margin-top: 0rem;
+}
+.btn {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 3rem;
+}
+.btnex {
+  border-radius: 80px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  border: 3px solid var(--text);
+}
+}
